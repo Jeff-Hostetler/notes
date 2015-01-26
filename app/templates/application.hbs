@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
+<h2 id="title">Store notes locally</h2>
+<hr>
+<div class="links">
+  {{#link-to 'notes'}}
+  <h3>Notes</h3>
+  {{/link-to}}
+  {{#link-to 'index'}}
+  <h3>Home</h3>
+  {{/link-to}}
+</div>
 {{outlet}}
