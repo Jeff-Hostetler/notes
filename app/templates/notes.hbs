@@ -6,10 +6,20 @@
 <div>
   {{textarea value=noteCopy class="exampleTextArea"}}
 </div>
-<button {{action 'newNote'}}>Save Note</button>
+<div class="createButton">
+  <button {{action 'newNote'}}>Save Note</button>
+</div>
+<div class="flash">
+  {{message-queue}}
+</div>
+<hr>
+<hr>
 
 {{#each note in model}}
 <div class="note">
   {{note.body}}
+  <div class="deleteButton">
+    <button {{action 'deleteNote' note.id}}>Delete</button>
+  </div>
 </div>
 {{/each}}
