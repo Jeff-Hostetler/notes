@@ -30,7 +30,6 @@ textarea{
 }
 
 
-}
 .createButton > button{
   display: block;
   margin: 0 auto;
@@ -41,7 +40,6 @@ textarea{
   width: 50%;
   font-size: 2em;
   font-family: 'Josefin Slab', serif;
-
 }
 
 .flash{
