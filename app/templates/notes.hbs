@@ -1,10 +1,11 @@
 {{outlet}}
-
+{{textarea placeholder="Add a title!" value=noteTitle class="titleOfNote"}}
+{{textarea value=noteTitle class="titleOfNote"}}
 <div class="textBox">
   {{textarea placeholder="Add a note!" value=noteCopy}}
 </div>
-<div>
-  {{textarea value=noteCopy class="exampleTextArea"}}
+<div class="exampleTextArea">
+  {{textarea value=noteCopy}}
 </div>
 <div class="createButton">
   <button {{action 'newNote'}}>Save Note</button>
@@ -17,9 +18,9 @@
 
 {{#each note in model}}
 <div class="note">
+  {{note.title}}
+  <hr>
   {{note.body}}
-  <div class="deleteButton">
-    <button {{action 'deleteNote' note.id}}>Delete</button>
-  </div>
+  {{local-note body=note.body id=note.id deleteNote="deleteNote"}}
 </div>
 {{/each}}

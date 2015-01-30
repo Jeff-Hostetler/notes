@@ -13,22 +13,30 @@ textarea{
   width: 46%;
   box-sizing: border-box;
   border: 2px solid white;
-  float: left;
   height: 200px;
-  margin: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10px;
   border-radius: 10px;
   background-color: #C6C6D1;
   color: black;
   font-size: 1.5em;
   font-family: 'Josefin Slab', serif;
   padding: 10px;
+  float: left;
+
+}
+
+.titleOfNote{
+  height: 40px;
+  float: left;
+  margin-bottom: 0px;
 }
 
 .exampleTextArea{
-  background-color:#728273;
+  background-color: #728273;
   color: #C6C6D1;
 }
-
 
 .createButton > button{
   display: block;
